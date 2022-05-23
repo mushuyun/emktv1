@@ -15,7 +15,6 @@ app.use(express.json());
 // var apiKey = process.env.API_KEY;
 mailchimp.setConfig({
     apiKey: process.env.USER_KEY,
-    // apiKey: "bcc4ef4ab1ced0764538a790d4356d42-us2",
     server: "us2" 
 });
 
