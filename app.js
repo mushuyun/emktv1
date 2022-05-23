@@ -12,7 +12,6 @@ app.use(express.static("public"));
 app.use(express.json());
 
 //mailchimp configure
-// var apiKey = process.env.API_KEY;
 mailchimp.setConfig({
     apiKey: process.env.USER_KEY,
     server: "us2" 
