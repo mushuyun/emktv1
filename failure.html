@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <link href="/docs/5.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    
+    <style media="screen">
+        
+    .contain{
+      margin-top:50px;
+    }
+      /* img{
+        width:100px;
+        height:100px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+      }  */
+      h1{
+        text-align: center;
+        margin-top:20px;
+        font-family: 'Roboto', sans-serif;
+      }
+      .alert-warning{
+        padding-left: 600px;
+        color: crimson;
+        font-style: oblique;
+        font-size: 20px;
+        font-weight: bold;
+        background-color: bisque;
+      }
+      .btn{ 
+        margin-left: 600px;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="alert alert-warning" role="alert">
+      Fail to post!
+    </div>
+    <div class="contain">
+      <!-- <img src="cancel.svg"  /> -->
+      <h1>Check your Fields <br /> make sure they are not used earlier....</h1>
+      <form action="/failure" method="post">
+        <button class="btn btn-lg btn-warning">Try again</button>
+      </form>
+    </div>
+  </body>
+</html>
